@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="heading">
+            <h1>Shopptin Cart</h1>
+            <div class="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="itemCount"><p>0</p></div>
+        </div>
+    
+        <div class="products">
+            <div class="item">
+                <img src="./img/1.jpeg" alt="">
+                <h4>Black and White Shirt</h4>
+                <p><b>$<span>28</span></b></p>
+                <input type="hidden" data-id="1">
+                <a class="addToCart" href="#">Add to cart</a>
+            </div>
+            <div class="item">
+                <img src="./img/2.jpg" alt="">
+                <h4>Blue and White Shirt</h4>
+                <p><b>$<span>25</span></b></p>
+                <input type="hidden" data-id="2">
+                <a class="addToCart" href="#">Add to cart</a>
+            </div>
+            <div class="item">
+                <img src="./img/3.jpg" alt="">
+                <h4>Light Blue Shirt</h4>
+                <p><b>$<span>30</span></b></p>
+                <input type="hidden" data-id="3">
+                <a class="addToCart" href="#">Add to cart</a>
+            </div>
+        </div>
+      
+        <div class="cartContainer">
+            <div class="allItem">
+                <h1>Cart</h1>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>
+                               Item name
+                            </th>
+                            <th>
+                                Quantity
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                <hr>
+                <h3>Total = $<span class="totalPrice">0</span></h3>
+               <div class="cross">
+                <p >+</p>
+               </div> 
+            </div>
+        </div>
+    </div>
+   
+       
+
+    <script src="app.js"></script>
+</body>
+
+</html>
